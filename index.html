@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Beauty Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Beauty Store</h1>
+
+  <button class="menu-toggle" aria-label="Abrir menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="menu">
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Realce sua beleza natural</h2>
+    <p>Maquiagens de alta qualidade para todos os estilos.</p>
+    <button>Ver produtos</button>
+  </div>
+</section>
+
+<section class="products">
+  <h2>Nossos Produtos</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="img/batom.jpg" alt="Batom">
+      <h3>Batom Matte</h3>
+      <p>R$ 39,90</p>
+    </div>
+
+    <div class="product-card">
+      <img src="img/base.jpg" alt="Base">
+      <h3>Base Líquida</h3>
+      <p>R$ 59,90</p>
+    </div>
+
+    <div class="product-card">
+      <img src="img/paleta2.jpg" alt="Paleta">
+      <h3>Paleta de Sombras</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Beauty Store</p>
+</footer>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
